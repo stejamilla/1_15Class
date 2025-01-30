@@ -1,0 +1,38 @@
+---
+title: "Hello Quarto"
+format: html
+embed-resources: true
+code-fold: true
+toc: true
+editor_options: 
+  chunk_output_type: console
+params:
+  state: "Virginia"
+bibliography: references.bib
+---
+
+## 1/15 Notes {#sec-test}
+
+I used to live in `r params$state`.
+
+```{r}
+
+toupper(params$state)
+
+```
+
+RMSE (@eq-rmse)
+
+$$
+\sqrt{\frac{1}{n}\sum_{i=1}^{n}\left(y -\hat{y}  \right)^{2}}
+$$ {#eq-rmse}
+
+If working with a sample, use (n - 1) in denominator bc already used one degree of freedom to estimate the mean. If working with pop, divide by n instead
+
+## 1/22 Notes
+
+Referencing the previous class @sec-test
+
+Adding a cross-reference to RMSE @eq-rmse
+
+Tidy data is an important idea in data science. [@wickham2014] This citation insertion feature is particularly good for after a sentence. Use @wickham2014 for in line citation.
